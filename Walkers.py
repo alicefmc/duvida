@@ -21,9 +21,10 @@ while True:
     # Extraia as caixas delimitadoras para quaisquer corpos identificados
     for (x,y,w,h) in body :
         cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),5)
-        cv2.imshow(body)
+        cv2.imshow("AAAH",frame)
     if cv2.waitKey(1) == 32: #32 é a barra de espaço
         break
 
 cap.release()
 cv2.destroyAllWindows()
+
